@@ -25,7 +25,6 @@ def get_result(x: str = Form(...), y: str = Form(...)):
         local = prediction[0]
     else:
         local = '외국'
-    
     return JSONResponse({'local': local})
 
 
