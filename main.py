@@ -19,3 +19,5 @@ def get_result(x: str = Form(...), y: str = Form(...)):
     else:
         local = '외국'
     return JSONResponse({'local': local})
+if __name__=="__main__":
+    uvicorn.run(app,host="0.0.0.0",port=8000)
